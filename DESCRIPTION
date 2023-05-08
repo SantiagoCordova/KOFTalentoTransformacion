@@ -1,11 +1,10 @@
 Package: KOFTalentoTransformacion
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Munge KOF talent data for Talent Management and Performance COEs
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Santiago Córdova López
+Maintainer: Santiago Córdova López <santiago.cordova@kof.com.mx>
+Description: Read and munge performance and 9box raw data from Employee Central
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
