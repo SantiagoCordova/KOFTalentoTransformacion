@@ -34,14 +34,14 @@ create_RFTalento <- function(.date, .dataPONineBox){
     mutate(Operación = 'KOF') %>%
     rbind(., .data)
 
-  .data %>%
+  .data <-
+    data %>%
     mutate(Date = .date) %>%
     select(Date, Operación, `Functional Area`,	`OH-FL`,
            `Contribution Level`,	`KOF Seniority Rank`,	`Rank Seniority Position`,
            `Age Range`,	`Gender`, `CurrentPlacement`, `LastPlacement`, `n`,
            `ID de usuario/empleado`, `Mostrar nombre`,
-           `ID Posición`, `Nombre de Posición (Label)`) %>%
-    openxlsx::write.xlsx(., 'HeadCount9BOX.xlsx')
+           `ID Posición`, `Nombre de Posición (Label)`)
 
   return(.data)
 
