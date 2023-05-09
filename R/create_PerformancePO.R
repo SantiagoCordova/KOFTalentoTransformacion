@@ -12,7 +12,7 @@ create_PerformancePO <- function(.pathPO, .patPerformance, .year){
     read.csv(., check.names = FALSE)
 
   .dataPerformance <- read_Performance(.patPerformance) %>%
-    munge_YearPerformance(., .dataPO, .year)
+    munge_YearPerformance(., .year)
 
   .data <- .dataPO %>% left_join(., .dataPerformance)
 
